@@ -1,0 +1,125 @@
+/* GENERAL SETTING */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
+/* font-family: 'Fraunces', serif; */
+
+/* Font size (paragraph): 14px */
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --cream: hsl(30, 38%, 92%);
+  --dark-cyan: hsl(158, 36%, 37%);
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --very-dark-blue: hsl(212, 21%, 14%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--Dark-grayish-blue);
+  background-color: var(--cream);
+}
+
+/* CARD SECTION */
+.card {
+  max-width: 42rem;
+  width: 100vh;
+  margin: 10% auto;
+  background-color: var(--white);
+  padding-bottom: 1rem;
+  border-radius: 10px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.product-info {
+  margin: 3rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-weight: 200;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-family: "Fraunces", serif;
+  font-size: 4rem;
+  color: var(--very-dark-blue);
+  line-height: 1;
+  margin-bottom: 2rem;
+}
+
+.product-content p {
+  line-height: 1.6;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.product-price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.product-price h2 {
+  font-family: "Fraunces", serif;
+  font-size: 4rem;
+  color: var(--dark-cyan);
+}
+
+.product-price p {
+  text-decoration: line-through;
+  padding-left: 2rem;
+}
+
+.shopping-cart {
+  position: relative;
+}
+.cart {
+  position: absolute;
+  content: url(/images/icon-cart.svg);
+  height: 2rem;
+  width: 2rem;
+  top: 1.5rem;
+  left: 9rem;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  outline: none;
+  border: none;
+  text-decoration: none;
+  background-color: var(--dark-cyan);
+  color: var(--white);
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 1.8rem 13rem;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: hsl(158, 34%, 30%);
+}
